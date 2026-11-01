@@ -24,13 +24,12 @@
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
+  document.querySelectorAll('#navmenu a').forEach(navLink => {
+    navLink.addEventListener('click', () => {
       if (document.querySelector('.header-show')) {
         headerToggle();
       }
     });
-
   });
 
   /**
